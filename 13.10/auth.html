@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cookie_write(key, value) {
+            document.cookie = `${key}=${value}`
+            console.log(`New cookie: ${key}=${value}\nAll cookies: ${document.cookie}`)
+        }
+        
+        cookie_write("newcock", "value")
+    </script>
+</body>
+</html>
