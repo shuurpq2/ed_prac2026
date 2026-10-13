@@ -10,8 +10,14 @@
             document.cookie = `${key}=${value}`
             console.log(`New cookie: ${key}=${value}\nAll cookies: ${document.cookie}`)
         }
-        
-        cookie_write("newcock", "value")
+
+        function auth_get_uuid(is_authorized) {
+            let ans
+
+            if (is_authorized) ans = crypto.randomUUID()
+
+            return ans
+        }
     </script>
 </body>
 </html>
