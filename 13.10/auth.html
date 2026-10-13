@@ -24,6 +24,19 @@
             localStorage.setItem("password", password)
             localStorage.setItem("email", email)
         }
+
+        function fictious_auth() {
+            const name = localStorage.getItem("name")
+            const password = localStorage.getItem("password")
+            const email = localStorage.getItem("email")
+            let ans
+
+            if (name && password && email) {
+                ans = crypto.randomUUID()
+                cookie_write("uuid", ans)
+            }
+            return ans
+        }
     </script>
 </body>
 </html>
