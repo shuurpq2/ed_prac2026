@@ -1,5 +1,5 @@
 function positive_filter(array) {
-    filtered_array = []
+    let filtered_array = []
     array.forEach(el => {el >= 0 ? filtered_array.push(el) : null});
 
     return filtered_array
