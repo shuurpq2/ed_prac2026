@@ -1,4 +1,4 @@
-const JSONP_URL = "https://jsonplaceholder.typicode.com/posts/1"
+const JSONP_URL = "https://jsonplaceholder.typicode.com/posts"
 
 // fetch
 fetch(JSONP_URL).then(r => r.json()).then(json => console.log(json))
